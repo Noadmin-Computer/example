@@ -1,0 +1,223 @@
+:root {
+  --mainWhite: #fff;
+  --mainTextColor: #df6951;
+  --mainTitleColor: #181e4b;
+  --mainInfoColor: #5e6282;
+  --linkColor: #212832;
+  --warningColor: #f1a501;
+  --poppins: "Poppins", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --volkhov: "Volkhov", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--poppins);
+}
+
+@font-face {
+  font-family: GoogleSans;
+  src: url(/fonts/ProductSans-Regular.ttf);
+}
+header .navbar {
+  width: 100%;
+  height: 40px;
+  margin-top: 47px;
+}
+.navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 140px);
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+}
+.navbar-nav {
+  margin-left: 100px;
+}
+ul li {
+  margin: 0 30px;
+  list-style: none;
+}
+ul li a {
+  font-family: GoogleSans;
+  text-decoration: none;
+  color: var(--linkColor);
+  font-size: 17px;
+}
+.register {
+  display: flex;
+  align-items: center;
+}
+.register button {
+  width: 102px;
+  height: 40px;
+  border: 1px solid #212832;
+  font-family: GoogleSans;
+  font-size: 17px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-family: GoogleSans;
+}
+.header-info-wrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 150px);
+  height: 100vh;
+  margin: 0 auto;
+}
+.container .left-wrapper {
+  width: 46%;
+}
+.left-wrapper h1 {
+  font-family: var(--volkhov);
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  color: var(--mainTitleColor);
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.left-wrapper h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: var(--poppins);
+  color: var(--mainTextColor);
+}
+.left-wrapper-description {
+  position: relative;
+}
+.left-wrapper-description img {
+  position: absolute;
+  top: 123px;
+  left: 45%;
+  z-index: -1;
+}
+.left-wrapper-description p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--mainInfoColor);
+}
+
+.play-btn-wrapper .find {
+  width: 170px;
+  height: 60px;
+  left: 148px;
+  top: 692px;
+  background: var(--warningColor);
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  border: none;
+  font-family: var(--poppins);
+  outline: none;
+  color: white;
+}
+.play-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+  margin-top: 34px;
+}
+.play-demo {
+  display: flex;
+  align-items: center;
+}
+.play-btn-wrapper span {
+  margin-left: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #df6951;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+  cursor: pointer;
+}
+.play-demo p {
+  margin: 0 21px;
+}
+.play-demo span i {
+  color: white;
+}
+
+.right-wrapper {
+  position: relative;
+  width: 55%;
+  height: 100vh;
+  background-image: url("/rasmlar/header/traveller.png");
+  background-size: cover;
+  background-position: center;
+}
+.figure {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.first-plane {
+  position: absolute;
+  top: 10%;
+}
+.second-plane {
+  position: absolute;
+  right: -7%;
+  top: 17%;
+  z-index: -1;
+}
+
+.card-wrapper .card-container {
+  width: calc(100% - 174px);
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-container .card {
+  width: 30%;
+  height: 80vh;
+  box-shadow: inset 0px 100px 80px rgba(0, 0, 0, 0.02);
+  filter: drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+    drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+    drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+    drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+    drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  border-radius: 24px;
+}
+.card-image {
+    position: absolute;
+    width: 100%;
+}
+.card-image img {
+    width: 100%;
+}
+.card-info {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    background: white;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
